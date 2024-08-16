@@ -1,0 +1,10 @@
+<div
+  class="lib-ui-button {{type()}}"
+  [ngClass]="{
+    'disabled': disabled(),
+  }"
+>
+  <button (click)="beenClicked()">
+    {{ text() }}
+  </button>
+</div>

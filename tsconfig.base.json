@@ -14,7 +14,12 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@axial/theme": ["libs/theme/src/index.ts"],
+      "@axial/ui": ["libs/ui/src/index.ts"],
+      "@take-home/services": ["apps/take-home/src/services/index"],
+      "@take-home/pipes": ["app/take-home/src/pipes/index"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

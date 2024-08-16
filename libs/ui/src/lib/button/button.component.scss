@@ -1,0 +1,49 @@
+@use 'sass:math';
+
+@import '@axial/theme';
+
+:host {
+  .lib-ui-button {
+    &.secondary {
+      button {
+        background: $jupiter;
+        color: $shadyCharacter;
+
+        &:hover {
+          background: $ancestralWater;
+          color: $black;
+        }
+      }
+    }
+
+    &.disabled {
+      button {
+        background: $palladium;
+        cursor: default;
+
+        &:hover {
+          background: $palladium;
+        }
+      }
+    }
+
+    button {
+      transition: 500ms color ease, 500ms background-color ease;
+      font-family: 'Courier New', Courier, monospace;
+      letter-spacing: math.div($base-1, 2);
+      background: $retroBlue;
+      border: 0 none;
+      appearance: none;
+      text-transform: uppercase;
+      padding: $base-2 $base-6;
+      border-radius: $base-1;
+      font-size: $base-8;
+      color: $white;
+      cursor: pointer;
+
+      &:hover {
+        background: $guillimanBlue;
+      }
+    }
+  }
+}

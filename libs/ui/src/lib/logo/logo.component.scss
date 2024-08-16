@@ -1,0 +1,28 @@
+:host {
+  display: flex;
+  height: 100%;
+  width: 100%;
+
+  .logo {
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+    svg > * {
+      transition-property: fill;
+    }
+
+    .-blue {
+      fill: #326CF4;
+    }
+
+    .-red {
+      fill: #D7272B;
+    }
+
+    .-black {
+      fill: #010000;
+    }
+  }
+
+}

@@ -2,6 +2,12 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "../../dist/out-tsc",
+    "baseUrl": ".",
+    "paths": {
+      "@axial/ui": ["../../libs/ui/src/index"],
+      "@take-home/services": ["src/services/index"],
+      "@take-home/pipes": ["src/pipes/index"]
+    },
     "types": []
   },
   "files": ["src/main.ts"],

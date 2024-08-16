@@ -1,0 +1,24 @@
+@import '@axial/theme';
+
+:host {
+  .lib-ui-header {
+    display: flex;
+    padding-top: $base-5;
+    padding-bottom: $base-5;
+    background: $crystalBell;
+    box-shadow: 1px 1px $base-1 rgba(0, 0, 0, .25);
+    justify-content: center;
+    align-items: center;
+
+    .lib-ui-logo {
+      width: $base-15 * 2;
+      transition: 500ms all ease;
+    }
+
+    @media screen and (min-width: $sm) {
+      .lib-ui-logo {
+        width: $base-15 * 3;
+      }
+    }
+  }
+}

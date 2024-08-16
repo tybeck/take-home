@@ -1,0 +1,34 @@
+@use 'sass:math';
+
+@import '@axial/theme';
+
+:host {
+  height: 100%;
+
+  .lib-page-output {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    transition: 500ms all ease;
+    font-size: $base-8 * 1.5;
+    letter-spacing: $base-1;
+    font-family: 'Courier New', Courier, monospace;
+    flex-direction: column;
+
+    @media screen and (min-width: $sm) {
+      font-size: $base-8 * 2;
+    }
+
+    @media screen and (min-width: $md) {
+      font-size: $base-8 * 2.5;
+    }
+
+    .lib-page-output-numbers {
+      background: $retroBlue;
+      padding: $base-3 $base-6;
+      border-radius: $base-1;
+      color: $white;
+    }
+  }
+}

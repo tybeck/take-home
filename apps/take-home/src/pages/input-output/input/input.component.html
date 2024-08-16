@@ -1,0 +1,10 @@
+<div class="lib-page-input">
+  <div class="lib-ui-financial-input-content">
+    <lib-ui-financial-input (valueChange)="valueChange($event)" />
+    <lib-ui-button
+      (clicked)="continue()"
+      [disabled]="(isDisabled$ | async)"
+      text="Go"
+    />
+  </div>
+</div>

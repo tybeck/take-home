@@ -1,0 +1,10 @@
+<div class="lib-page-output">
+  <div class="lib-page-output-numbers">
+    {{ (value$ | async)! | cnnToSnf | number: '1.0-0' }}
+  </div>
+  <lib-ui-button
+    [type]="ButtonType.Secondary"
+    (clicked)="back()"
+    text="Back"
+  />
+</div>
